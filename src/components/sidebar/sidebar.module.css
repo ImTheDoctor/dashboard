@@ -1,4 +1,7 @@
-.aside{}
+.aside{
+    position: fixed;
+    height: 100%;
+}
 
 .img_wrapper{
     width: 100%;

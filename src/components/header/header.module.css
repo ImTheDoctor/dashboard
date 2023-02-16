@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.breadcrumbs_wrapper{}
+
+.infoBar {
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.infoBar_form {
+    position: relative;
+}
+
+input:focus~.infoBar_form_label,
+input:not(:focus):valid~.infoBar_form_label {
+    top: -8px;
+    bottom: 10px;
+    left: 5px;
+    font-size: 12px;
+    opacity: 1;
+    color: #1A73E8;
+}
+
+.infoBar_form_input {
+    font-size: 14px;
+    width: 200px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.infoBar_form_input:focus{
+    border: 1px solid #1A73E8;
+}
+
+.infoBar_form_label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 7px;
+    transition: 0.4s ease all;
+    font-size: small;
+    z-index: 1;
+    background-color: transparent;
+
+}
+
+.infoBar_settings{
+    display: flex;
+    gap: 10px;
+}

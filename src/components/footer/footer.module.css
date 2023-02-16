@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.footer_info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #7B809A;
+    font-size: 0.875rem;
+}
+.footer_info a{
+    font-weight: 900;
+    color: #000
+}
+
+.footer_menu_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_menu_link{
+    color: #7B809A;
+    font-size: 0.875rem;
+}

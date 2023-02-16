@@ -1,7 +1,5 @@
 import './App.css'
-import Sidebar from './components/sidebar/Sidebar'
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
+import { Sidebar, Header, Footer } from './components'
 import Routes from './routes/routes'
 
 function App() {
@@ -13,11 +11,12 @@ function App() {
       </div>
       <div className='content_wrapper'>
         <Header />
-        <Routes />
+        <main>
+          <Routes />
+        </main>
         <Footer />
       </div>
     </div>
-
   )
 }
 
