@@ -6,8 +6,8 @@ import styles from './notifications.module.css'
 const Notifications = () => {
   return (
     <section className={styles.notifications_wrapper}>
-      <div className={`container ${styles.nots}`}><Alerts /></div>
-      <div className={`container  ${styles.alerts}`}><NotificationList /></div>
+      <div className={`container ${styles.alerts}`}><Alerts /></div>
+      <div className={`container  ${styles.notes}`}><NotificationList /></div>
     </section>
   )
 }
