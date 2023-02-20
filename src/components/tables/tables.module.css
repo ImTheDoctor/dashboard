@@ -7,40 +7,85 @@
 .tables_authors,
 .tables_projects {
     width: 100%;
-    color: rgba(0, 0, 0, 0.87);
-    display: flex;
-    flex-direction: column;
+    max-width: 1200px;
+    margin: 30px auto;
     gap: 16px;
     padding: 20px;
-    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    position: relative;
-    min-width: 0px;
     overflow-wrap: break-word;
     background-color: rgb(255, 255, 255);
-    background-clip: border-box;
     border: 0px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.75rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
-    overflow: visible;
-    margin-bottom: 30px;
 }
 
-.row{
-    border-bottom: 1px solid black;
+.author_group {
+    display: flex;
+    align-items: center;
 }
 
-.table{
+.row {
+    border-bottom: 0.0625rem solid rgb(240, 242, 245);
+}
+
+.title_wrapper {
+    margin: -48px 16px 48px 16px;
+    padding: 24px 16px;
+    opacity: 1;
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+    color: rgb(52, 71, 103);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.14) 0rem 0.25rem 1.25rem 0rem, rgba(0, 187, 212, 0.4) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.0075em;
+    color: rgb(255, 255, 255);
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
 }
 
-.author_group{
+.table th {
+    text-align: left;
+    opacity: 0.7;
+    color: rgb(123, 128, 154);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table td:first-child {
+    width: 40%;
+}
+
+.table th:first-child {
+    text-align: start;
+}
+
+.table td:last-child {
+    text-align: center;
+}
+
+.table td div span {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: 0.03333em;
+}
+
+.author_group {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding: 20px;
-    width: 600px;
-    max-width: 600px;
 }
+
 .imgWrapper {
     border-radius: 50%;
     overflow: hidden;
@@ -51,7 +96,7 @@
 .imgWrapper img {
     width: 100%;
     object-fit: cover;
-    height: auto;
+    height: 100%;
 }
 
 .authorInfo {
@@ -72,4 +117,34 @@
     font-weight: 300;
     line-height: 1.25;
     color: rgb(52, 71, 103);
+}
+
+.status {
+    padding: 0.55em 0.9em;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+    /* background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71)); */
+    color: rgb(255, 255, 255);
+}
+
+.offline {
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+}
+
+.online {
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+}
+
+@media only screen and (max-width: 600px) {
+    .table {
+        font-size: 14px;
+        overflow-x: scroll;
+        max-height: 300px;
+        display: block;
+    }
 }

@@ -5,7 +5,7 @@ const authors = [
         email: 'john@creative-tim.com',
         role: 'Manager',
         status: 'online',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
     {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-3.0ef0be95e6850814c79e.jpg',
@@ -13,7 +13,7 @@ const authors = [
         email: 'alexa@creative-tim.com',
         role: 'Developer',
         status: 'offline',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
     {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-3.0ef0be95e6850814c79e.jpg',
@@ -21,7 +21,7 @@ const authors = [
         email: 'alexa@creative-tim.com',
         role: 'Developer',
         status: 'offline',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
     {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-4.85c82b6e60178804017f.jpg',
@@ -29,7 +29,7 @@ const authors = [
         email: 'laurent@creative-tim.com',
         role: 'Executive',
         status: 'online',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
     {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-3.0ef0be95e6850814c79e.jpg',
@@ -37,7 +37,7 @@ const authors = [
         email: 'michael@creative-tim.com',
         role: 'Developer',
         status: 'online',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
     {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-3.0ef0be95e6850814c79e.jpg',
@@ -45,14 +45,14 @@ const authors = [
         email: 'richard@creative-tim.com',
         role: 'Manager',
         status: 'offline',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     }, {
         imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/team-4.85c82b6e60178804017f.jpg',
         fullname: 'Miriam Eric',
         email: 'miriam@creative-tim.com',
         role: 'developer',
         status: 'offline',
-        date: Date.now()
+        date: new Date().toLocaleDateString()
     },
 ]
 

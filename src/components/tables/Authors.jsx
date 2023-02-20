@@ -5,10 +5,10 @@ import styles from './tables.module.css'
 const Authors = () => {
     return (
         <>
-            <div>
-                <h6>Authors table</h6>
+            <div className={styles.title_wrapper}>
+                <h6 className={styles.title}>Authors table</h6>
             </div>
-            <div className={styles.author_box_wrapper}>
+            <div>
                 <table role="table" className={styles.table}>
                     <thead role="rowgroup">
                         <tr role="row">
@@ -43,8 +43,9 @@ const Authors = () => {
                                     </td>
                                     <td>
                                         <div>
-                                            <span>{author.status}</span>
+                                            <span className={`${styles.status} ${author.status === 'offline' ? styles.offline: styles.online}`}>{author.status}</span>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div>

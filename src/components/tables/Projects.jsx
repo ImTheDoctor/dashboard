@@ -4,12 +4,12 @@ import styles from './tables.module.css'
 
 const Projects = () => {
     return (
-        <div>
-            <div>
-                <h6>Projects table</h6>
+        <>
+            <div className={styles.title_wrapper}>
+                <h6 className={styles.title}>Projects table</h6>
             </div>
             <div>
-                <table role="table">
+                <table role="table" className={styles.table}>
                     <thead role="rowgroup">
                         <tr role="row">
                             <th role="columnheader">Project</th>
@@ -22,12 +22,16 @@ const Projects = () => {
                     <tbody role="rowgroup">
                         {
                             projects && projects.map((projects, idx) => (
-                                <tr key={idx} role="row">
+                                <tr key={idx} role="row" className={styles.row}>
                                     <td>
                                         <div>
-                                            <div>
-                                                <img src={projects.imgUrl} alt="logo" />
-                                                <span>{projects.projectName}</span>
+                                            <div className={styles.author_group}>
+                                                <div className={styles.imgWrapper}>
+                                                    <img src={projects.imgUrl} alt="logo" />
+                                                </div>
+                                                <div className={styles.authorInfo}>
+                                                    <span className={styles.fullname}>{projects.projectName}</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -58,7 +62,7 @@ const Projects = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
+        </>
     )
 }
 

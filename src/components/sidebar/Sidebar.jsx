@@ -11,7 +11,7 @@ const Sidebar = () => {
       <Link to={'/'} className={styles.img_wrapper}>
         <img src="/src/assets/index.png" alt="logo" />
         <div>
-          <h6>Material Dashboard 2</h6>
+          <h6>Material Dashboard</h6>
         </div>
       </Link>
 
