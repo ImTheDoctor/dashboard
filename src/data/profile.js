@@ -66,4 +66,23 @@ const conversation = [{
     message: 'Hi! I need more information'
 }]
 
-export { accountSettings, applicationSettings, profileInfo, conversation }
+const projects = [{
+    imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-1.05e218fd495ccc65c99d.jpg',
+    title: 'Modern',
+    text: 'As Uber works through a huge amount of internal management turmoil.'
+}, {
+    imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-2.b4e5397c9846645ba275.jpg',
+    title: 'Scandinavian',
+    text: 'Music is something that everyone has their own specific opinion about.'
+}, {
+    imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg',
+    title: 'Minimalist',
+    text: 'Different people have different taste, and various types of music.'
+}, {
+    imgUrl: 'https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-4.5b448fd339a14695f6aa.jpeg',
+    title: 'Gothic',
+    text: 'Why would anyone pick blue over pink? Pink is obviously a better color.'
+}
+]
+
+export { accountSettings, applicationSettings, profileInfo, conversation, projects }

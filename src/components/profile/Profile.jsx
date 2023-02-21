@@ -3,7 +3,9 @@ import styles from './profile.module.css'
 import ProfileDetail from './ProfileDetail'
 import ProfileInfo from './ProfileInfo'
 import Settings from './Settings'
-import { applicationSettings, accountSettings, profileInfo } from '../../data/profile'
+import { applicationSettings, accountSettings, profileInfo, conversation, projects } from '../../data/profile'
+import Conversation from './Conversation'
+import Projects from './Projects'
 
 const Profile = () => {
   return (
@@ -12,19 +14,18 @@ const Profile = () => {
       <div className={styles.profile_container}>
         <ProfileInfo profileInfo={profileInfo} />
         <div className={styles.settings_wrapper}>
-          <div>
+          <div className={styles.setting}>
             <Settings applicationSettings={applicationSettings} accountSettings={accountSettings} />
           </div>
           <div className={styles.information}>
             <ProfileDetail profileInfo={profileInfo} />
           </div>
           <div className={styles.conversation}>
-            <h6 className={styles.title}>Conversations</h6>
+            <Conversation conversation={conversation} />
           </div>
         </div>
-        <div>
-          <h6>Projects</h6>
-          <span>Architects design houses</span>
+        <div className={styles.projects}>
+          <Projects projects={projects}/>
         </div>
       </div>
     </section>
