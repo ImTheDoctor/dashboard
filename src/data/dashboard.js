@@ -1,3 +1,25 @@
+const appInfo = [{
+    icon: '/src/assets/home-svgrepo-com.svg',
+    title: 'Bookings',
+    int: 281,
+    progressText: '+55% than last week'
+}, {
+    icon: '/src/assets/chart-svgrepo-com.svg',
+    title: 'Today\'s Users',
+    int: 2300,
+    progressText: '+3% than last month'
+}, {
+    icon: '/src/assets/sales-amount-svgrepo-com.svg',
+    title: 'Revenue',
+    int: 34000,
+    progressText: '+1% than yesterday'
+}, {
+    icon: '/src/assets/users-svgrepo-com.svg',
+    title: 'Followers',
+    int: 91,
+    progressText: 'just updated'
+},]
+
 const projects = [
     {
         companies: 'Material UI XD Version',
@@ -32,8 +54,4 @@ const projects = [
     }
 ]
 
-const orders = [{
-    
-}]
-
-export { projects };
+export { projects, appInfo };
