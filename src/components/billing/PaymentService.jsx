@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from './billing.module.css'
+import {BsPaypal} from 'react-icons/bs'
 
 const PaymentService = () => {
     return (
         <>
             <div className={styles.icon_wrapper}>
-                icon
+                <BsPaypal />
             </div>
             <div className={styles.payment_service_info}>
                 <h6 className={styles.payment_service_name}>Paypal</h6>

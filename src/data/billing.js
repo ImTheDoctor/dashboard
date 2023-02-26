@@ -1,22 +1,22 @@
 const invoices = [{
     budget: 180,
-    date: new Date('March, 01, 2020').toUTCString(),
+    date: new Date().toLocaleDateString(),
     code: 'MS-415646',
 }, {
     budget: 250,
-    date: new Date('February, 10, 2021').toUTCString(),
+    date: new Date().toLocaleDateString(),
     code: 'RV-126749',
 }, {
     budget: 120,
-    date: new Date('April, 05, 2020').toUTCString(),
+    date: new Date().toLocaleDateString(),
     code: 'QW-103578',
 }, {
     budget: 180,
-    date: new Date('June, 25, 2019').toUTCString(),
+    date: new Date().toLocaleDateString(),
     code: 'MS-518879',
 }, {
     budget: 300,
-    date: new Date('March, 01, 2019').toUTCString(),
+    date: new Date().toLocaleDateString(),
     code: 'AR-954412',
 },]
 

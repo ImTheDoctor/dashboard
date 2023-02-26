@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoMdTrash } from 'react-icons/io5'
+import { IoMdTrash } from 'react-icons/io'
 import { MdEdit } from 'react-icons/md'
 
 const BillingInfo = ({ billingInfo }) => {

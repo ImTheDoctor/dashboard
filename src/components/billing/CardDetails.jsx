@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from './billing.module.css'
+import { AiOutlineWifi } from 'react-icons/ai'
 
 const CardDetails = () => {
     return (
         <>
             <div className={styles.card_sign_wrapper}>
-                icon
+                <AiOutlineWifi />
             </div>
             <h5 className={styles.card_number}>5555 5555 5555 5555</h5>
             <div className={styles.card_bottom}>
@@ -20,7 +21,7 @@ const CardDetails = () => {
                     </div>
                 </div>
                 <div className={styles.card_icon_wrapper}>
-                    visa icon
+                    <img src="https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png" alt="" />
                 </div>
             </div>
         </>

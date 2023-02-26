@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from './billing.module.css'
+import {AiFillBank} from 'react-icons/ai'
 
 const Salary = () => {
   return (
     <>
       <div className={styles.icon_wrapper}>
-        icon
+        <AiFillBank />
       </div>
       <div className={styles.salary_info}>
         <h6 className={styles.salary_name}>Salary</h6>

@@ -54,4 +54,88 @@ const projects = [
     }
 ]
 
-export { projects, appInfo };
+const views = [
+    {
+        name: 'M',
+        sales: 50,
+    }, {
+        name: 'T',
+        sales: 20,
+    }, {
+        name: 'W',
+        sales: 30,
+    }, {
+        name: 'T',
+        sales: 70,
+    }, {
+        name: 'F',
+        sales: 50,
+    }, {
+        name: 'S',
+        sales: 30,
+    }, {
+        name: 'S',
+        sales: 60,
+    }]
+
+const daily = [
+    {
+        name: 'Apr',
+        mobileApp: 50,
+    }, {
+        name: 'May',
+        mobileApp: 40,
+    }, {
+        name: 'Jun',
+        mobileApp: 200,
+    }, {
+        name: 'Jul',
+        mobileApp: 320,
+    }, {
+        name: 'Aug',
+        mobileApp: 500,
+    }, {
+        name: 'Sep',
+        mobileApp: 350,
+    }, {
+        name: 'Oct',
+        mobileApp: 200,
+    }, {
+        name: 'Nov',
+        mobileApp: 250,
+    }, {
+        name: 'Dec',
+        mobileApp: 550,
+    }]
+
+const completed = [
+    {
+        name: 'Apr',
+        mobileApp: 50,
+    }, {
+        name: 'May',
+        mobileApp: 40,
+    }, {
+        name: 'Jun',
+        mobileApp: 200,
+    }, {
+        name: 'Jul',
+        mobileApp: 220,
+    }, {
+        name: 'Aug',
+        mobileApp: 500,
+    }, {
+        name: 'Sep',
+        mobileApp: 250,
+    }, {
+        name: 'Oct',
+        mobileApp: 400,
+    }, {
+        name: 'Nov',
+        mobileApp: 230,
+    }, {
+        name: 'Dec',
+        mobileApp: 550,
+    }]
+
+export { projects, appInfo, completed, daily, views };

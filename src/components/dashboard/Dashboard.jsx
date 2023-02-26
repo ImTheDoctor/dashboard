@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './dashboard.module.css'
-import { appInfo, projects } from '../../data/dashboard'
+import { appInfo, projects, completed, daily, views } from '../../data/dashboard'
 import AppInfo from './AppInfo'
 import Charts from './Charts'
 import Projects from './Projects'
@@ -12,7 +12,9 @@ const Dashboard = () => {
         <AppInfo appInfo={appInfo} />
       </div>
       <div className={styles.charts_wrapper}>
-        <Charts />
+        <Charts data={views}/>
+        <Charts data={daily}/>
+        <Charts data={completed}/>
       </div>
       <div className={styles.projects_wrapper}>
         <Projects projects={projects} />
